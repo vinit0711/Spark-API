@@ -1,20 +1,18 @@
+import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 
 object DfCovidData extends App {
+    Logger.getLogger("org").setLevel(Level.ERROR)
     val spark = SparkSession.builder().master("local[*]").appName("spark Sql").getOrCreate()
     val df = spark.read.format("csv")
       .option("header","true")
       .option("inferSchema","true")
-      .load("/home/infinity//Documents/Spark/Examples/covidusa/*.csv")
-    //    df.show()
+      .load("/home/infinity/Documents/Spark/trendy/trendy_course_material/dataset/spark-api/orders.csv")
+    df.show()
     df.createOrReplaceTempView("sqldf")
-    //Question : Deaths state wise
-    //val sqldfusa=spark.sql("SELECT state, sum(death)/sum(positive) FROM sqldf GROUP BY state")
-    //    sqldfusa.show()
-    //    sqldfusa.write.csv("/home/infinity//Documents/Spark/Examples/covidusa/output.csv")
-    //Question : Deaths month wise
-    val sqldfusa=spark.sql("SELECT EXTRACT(month from date) as month, sum(death)" +
-      "from sqldf group by month ORDER BY month;")
-    sqldfusa.show()
+    val groupedOrdersDf=spark.sql("SELECT count(order_id), order_customer_id from sqldf Where order_customer_id > 1000 GROUP BY order_customer_id ;")
+    groupedOrdersDf.show()
+    scala.io.StdIn.readLine()
+    spark.stop()
 }
