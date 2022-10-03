@@ -5,7 +5,7 @@ import org.apache.spark.sql.functions._
 import java.sql.Timestamp
 
 case class OrdersData(order_id:Int , order_date:Timestamp ,order_customer_id:Int, order_status:String )
-object dsCOnversion extends App {
+object dsConversion extends App {
   Logger.getLogger("org").setLevel(Level.ERROR)
   val spark = SparkSession.builder().master("local[*]").appName("spark Sql").getOrCreate()
   val orderDf = spark.read.format("csv")
