@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4f0b0a9-e2e7-44ee-8457-b8c05e512a3d" name="Changes" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/AssignmentSolution2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/AssignmentWindow.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/StructFieldExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/columnExpression.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dsCOnversion.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/jsonFormatter.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/unstructuredDataHandling.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/week12_SparkWrite.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Assignmentsolution2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/csvToDfandQuerySQL.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/joinsExample.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/unstructured_list.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/DfCovidData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/DfCovidData.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +30,9 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2Eo6UxypUg4ONGI8WP0iJsiK9fl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,7 +43,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/infinity/Documents/Spark/intellig/Spark-API-New/src/main/scala&quot;
+    &quot;last_opened_file_path&quot;: &quot;/home/infinity/Documents/all_notes/udp-kafka-bridge&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -55,21 +51,7 @@
       <recent name="$PROJECT_DIR$/src/main/scala" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.columnExpression">
-    <configuration name="AssignmentWindow" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="AssignmentWindow" />
-      <module name="Spark-API-New" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StructFieldExample" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="StructFieldExample" />
-      <module name="Spark-API-New" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.joinsExample">
     <configuration name="columnExpression" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="columnExpression" />
       <module name="Spark-API-New" />
@@ -77,15 +59,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jsonFormatter" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="jsonFormatter" />
+    <configuration name="csvToDfandQuerySQL" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="csvToDfandQuerySQL" />
       <module name="Spark-API-New" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="week12_SparkWrite" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="week12_SparkWrite" />
+    <configuration name="joinsExample" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="joinsExample" />
+      <module name="Spark-API-New" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="udf" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="udf" />
+      <module name="Spark-API-New" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="unstructured_list" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="unstructured_list" />
       <module name="Spark-API-New" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,11 +89,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.joinsExample" />
+        <item itemvalue="Application.csvToDfandQuerySQL" />
+        <item itemvalue="Application.unstructured_list" />
+        <item itemvalue="Application.udf" />
         <item itemvalue="Application.columnExpression" />
-        <item itemvalue="Application.week12_SparkWrite" />
-        <item itemvalue="Application.StructFieldExample" />
-        <item itemvalue="Application.AssignmentWindow" />
-        <item itemvalue="Application.jsonFormatter" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +113,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663306271009</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First Commit">
+      <created>1664431896026</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664431896026</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First Commit">
+      <created>1664774383408</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664774383408</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
